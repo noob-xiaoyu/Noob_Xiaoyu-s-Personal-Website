@@ -18,6 +18,7 @@ const routes = {
     '#image-binary-converter': 'item/image-binary-converter.html',
     '#steam-account-manager': 'item/steam-account-manager.html',
     '#mc-classifier': 'item/mc-projection-classifier.html',
+    '#xiaoyu' : 'item/Xiaoyu-Personal-Web.html',
 };
 
 // --- 函数定义 ---
@@ -92,6 +93,7 @@ function handleRouteChange() {
         'item/image-binary-converter.html',
         'item/steam-account-manager.html',
         'item/mc-projection-classifier.html',
+        'item/Xiaoyu-Personal-Web.html',
     ];
 
     if (wideModePaths.includes(path)) {
