@@ -12,13 +12,16 @@ const routes = {
     '#root' : 'content/root.html',
     '#home': 'content/home.html',
     '#about': 'content/about.html',
-    '#imgui_menu' : 'item/imgui_menu.html',
-    '#launcher' : 'item/launcher-nc-yz.html',
-    '#yt-dlp-gui' : 'item/yt-dlp-gui.html',
-    '#image-binary-converter': 'item/image-binary-converter.html',
-    '#steam-account-manager': 'item/steam-account-manager.html',
-    '#mc-classifier': 'item/mc-projection-classifier.html',
-    '#xiaoyu' : 'item/Xiaoyu-Personal-Web.html',
+
+    '#imgui_menu' : 'project/imgui_menu.html',
+    '#launcher' : 'project/launcher-nc-yz.html',
+    '#yt-dlp-gui' : 'project/yt-dlp-gui.html',
+    '#image-binary-converter': 'project/image-binary-converter.html',
+    '#steam-account-manager': 'project/steam-account-manager.html',
+    '#mc-classifier': 'project/mc-projection-classifier.html',
+    '#xiaoyu' : 'project/Xiaoyu-Personal-Web.html',
+
+    '#download' : 'download.html',
 };
 
 // --- 函数定义 ---
@@ -87,13 +90,13 @@ function handleRouteChange() {
     const path = routes[hash] || routes[''];
     
     const wideModePaths = [
-        'item/imgui_menu.html', 
-        'item/launcher-nc-yz.html', 
-        'item/yt-dlp-gui.html',
-        'item/image-binary-converter.html',
-        'item/steam-account-manager.html',
-        'item/mc-projection-classifier.html',
-        'item/Xiaoyu-Personal-Web.html',
+        'project/imgui_menu.html', 
+        'project/launcher-nc-yz.html', 
+        'project/yt-dlp-gui.html',
+        'project/image-binary-converter.html',
+        'project/steam-account-manager.html',
+        'project/mc-projection-classifier.html',
+        'project/Xiaoyu-Personal-Web.html',
     ];
 
     if (wideModePaths.includes(path)) {
