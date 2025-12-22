@@ -89,7 +89,7 @@ body.image-mode {
 .background-overlay { 
     position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
     z-index: -1; 
-    background-color: rgba(0, 0, 0, 0.811); /* <-- 将 0.5 改为 0.6 */
+    background-color: rgba(0, 0, 0, 0.811); 
 }
 .video-background {
     display: none;
@@ -126,17 +126,16 @@ body.image-mode {
 .profile-info h1 {
     display: block !important;
     visibility: visible !important;
-    font-size: 1.8rem !important; /* 恢复桌面端默认字体大小 */
-    color: var(--link-color) !important; /* 恢复 h1 的默认颜色 */
+    font-size: 1.8rem !important; 
+    color: var(--link-color) !important; 
 }
 
-/* 2. 强制名字(span.name)本身可见、拥有正确的颜色和字体大小 */
 .profile-info h1 .name {
     display: inline !important;
     visibility: visible !important;
     opacity: 1 !important;
-    font-size: inherit !important; /* 确保字体大小与父元素h1一致 */
-    color: var(--color-name) !important; /* 强制使用名字的专属颜色 */
+    font-size: inherit !important; 
+    color: var(--color-name) !important; 
 }
 .profile-info h2 { 
     font-size: 1.8rem; 
@@ -158,36 +157,36 @@ body.image-mode {
 }
 
 .social-links { 
-    display: grid; /* 使用 Grid 布局，更灵活 */
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* 响应式列布局 */
-    gap: 1.5rem; /* 网格间距 */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem; 
     margin-bottom: 3rem; 
-    padding-left: 0; /* 移除之前的左内边距 */
+    padding-left: 0;
 }
 .link-box {
-    background-color: var(--card-bg-color);      /* 使用和卡片一样的半透明背景 */
-    backdrop-filter: blur(10px);                /* 核心的玻璃模糊效果 */
+    background-color: var(--card-bg-color);     
+    backdrop-filter: blur(10px);                
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid var(--card-border-color); /* 和卡片一样的边框 */
-    border-radius: var(--radius);               /* 和卡片一样的圆角 */
+    border: 1px solid var(--card-border-color); 
+    border-radius: var(--radius);               
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 .link-box:hover {
-    transform: translateY(-5px); /* 悬停时上浮 */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* 悬停时添加阴影 */
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 .link-box a {
-    display: flex; /* 使用 Flex 布局来居中内容 */
+    display: flex; 
     justify-content: center;
     align-items: center;
-    gap: 0.8rem; /* 图标和文字之间的间距 */
-    padding: 1rem; /* 为 box 提供内边距 */
+    gap: 0.8rem;
+    padding: 1rem; 
     text-decoration: none; 
     color: var(--link-color); 
     font-size: 1rem; 
     font-weight: 500; 
     transition: color 0.2s ease-in-out;
-    width: 100%; /* 确保链接填满整个 box */
+    width: 100%;
     height: 100%;
     box-sizing: border-box;
 }
@@ -262,11 +261,11 @@ footer {
 }
 
 .navbar {
-    display: flex;                 /* 1. 启用 Flexbox 布局 */
-    justify-content: flex-start;/* 2. 两端对齐：第一个子元素靠左，最后一个子元素靠右 */
-    align-items: center;           /* 3. 垂直居中对齐 */
-    width: 100%;                   /* 确保 header 占满整个宽度 */
-    margin-bottom: 2rem;           /* 保持与下方内容的间距 */
+    display: flex;              
+    justify-content: flex-start;
+    align-items: center;        
+    width: 100%;                
+    margin-bottom: 2rem;        
     padding: 0;
     border-bottom: none;
     background: none;
@@ -284,7 +283,7 @@ footer {
     line-height: 1.5; 
 }
 .back-button-box {
-    display: inline-block; /* 使盒子宽度自适应内容 */
+    display: inline-block;
     background-color: var(--card-bg-color);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -294,14 +293,13 @@ footer {
 }
 
 .back-button-box:hover {
-    transform: translateY(-3px); /* 悬停时轻微上浮 */
+    transform: translateY(-3px); 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* --- 返回按钮内部的链接 a 标签样式 --- */
 .back-button-box a {
-    display: block; /* 让链接填满整个带 padding 的盒子 */
-    padding: 0.6rem 1.2rem; /* 设置内边距，控制盒子大小 */
+    display: block;
+    padding: 0.6rem 1.2rem; 
     text-decoration: none;
     color: var(--link-color);
     font-weight: 500;
@@ -313,24 +311,24 @@ footer {
 }
 
 .page-title-in-header {
-    font-size: 1.8rem; /* 您可以根据需要调整字体大小 */
+    font-size: 1.8rem;
     font-weight: 600;
-    color: var(--text-color); /* 使用主题的文字颜色 */
-    margin: 0; /* 移除 h1 的默认外边距，以确保垂直居中准确 */
+    color: var(--text-color); 
+    margin: 0; 
     padding: 0;
-    border: none; /* 确保没有继承其他标题的边框样式 */
+    border: none;
     padding-bottom: 1rem;
 }
 
 
 
 .root-box {
-    background-color: var(--card-bg-color);      /* 使用和卡片一样的半透明背景色 */
-    backdrop-filter: blur(10px);                /* 核心的玻璃模糊效果 */
+    background-color: var(--card-bg-color);     
+    backdrop-filter: blur(10px);                
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--card-border-color);
-    border-radius: var(--radius);                        /* 和卡片一样的圆角 */
-    padding: 1.5rem;                            /* 为盒子内部提供一些填充空间 */
+    border-radius: var(--radius);               
+    padding: 1.5rem;                            
 }
 .root-box h1 { 
     font-weight: 600; 
@@ -359,12 +357,12 @@ footer {
 .home-box {
     justify-content: center; 
     align-items: center;
-    background-color: var(--card-bg-color);      /* 使用和卡片一样的半透明背景色 */
-    backdrop-filter: blur(10px);                /* 核心的玻璃模糊效果 */
+    background-color: var(--card-bg-color);     
+    backdrop-filter: blur(10px);                
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--card-border-color);
-    border-radius: var(--radius);                        /* 和卡片一样的圆角 */
-    padding: 1.5rem;                            /* 为盒子内部提供一些填充空间 */
+    border-radius: var(--radius);               
+    padding: 1.5rem;                            
 }
 .home-box h1 { 
     font-weight: 600; 
@@ -391,12 +389,12 @@ footer {
 }
 
 .Imgui_menu {
-    background-color: var(--card-bg-color);      /* 使用和卡片一样的半透明背景色 */
-    backdrop-filter: blur(10px);                /* 核心的玻璃模糊效果 */
+    background-color: var(--card-bg-color);     
+    backdrop-filter: blur(10px);                
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--card-border-color);
-    border-radius: var(--radius);                        /* 和卡片一样的圆角 */
-    padding: 1.5rem;                            /* 为盒子内部提供一些填充空间 */
+    border-radius: var(--radius);               
+    padding: 1.5rem;                            
 }
 .Imgui_menu h1 { 
     font-weight: 600; 
@@ -423,20 +421,20 @@ footer {
 }
 
 .launcher{
-    background-color: var(--card-bg-color);      /* 使用和卡片一样的半透明背景色 */
-    backdrop-filter: blur(10px);                /* 核心的玻璃模糊效果 */
+    background-color: var(--card-bg-color);     
+    backdrop-filter: blur(10px);                
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--card-border-color);
-    border-radius: var(--radius);                        /* 和卡片一样的圆角 */
+    border-radius: var(--radius);               
     padding: 1.5rem; 
 }
 
 .yt-dlp-gui{
-    background-color: var(--card-bg-color);      /* 使用和卡片一样的半透明背景色 */
-    backdrop-filter: blur(10px);                /* 核心的玻璃模糊效果 */
+    background-color: var(--card-bg-color);    
+    backdrop-filter: blur(10px);               
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--card-border-color);
-    border-radius: var(--radius);                        /* 和卡片一样的圆角 */
+    border-radius: var(--radius);              
     padding: 1.5rem; 
 }
 
@@ -489,17 +487,17 @@ footer {
     font-size: 1.1rem; 
 }
 .contact-icon {
-    width: 28px;           /* <-- 在这里修改你想要的宽度 */
-    height: 28px;          /* <-- 在这里修改你想要的高度 */
-    margin-right: 0rem;  /* 在图标和右侧文字之间添加一些间距 */
-    flex-shrink: 0;        /* 防止图标在空间不足时被压缩 */
+    width: 28px;         
+    height: 28px;        
+    margin-right: 0rem;  
+    flex-shrink: 0;      
 }
 
 #content-container.is-wide-page {
     max-width: 1000px;
 }
 #content-container.is-wide-page .content-wrapper {
-    max-width: 100%; /* 让它填满新的、更宽的父容器 */
+    max-width: 100%;
 }
 
 .accordion-header {
@@ -509,7 +507,7 @@ footer {
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--card-border-color);
     border-radius: var(--radius);
-    padding: 0.75rem 1.2rem; /* 减小内边距，让标题栏变矮 */
+    padding: 0.75rem 1.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -524,16 +522,14 @@ footer {
     border-bottom-right-radius: 0;
 }
 
-/* 2. 标题文字 (字体已调小) */
 .accordion-title {
-    font-size: 1.1rem; /* 减小标题字体大小 */
+    font-size: 1.1rem;
     font-weight: 600;
     color: var(--text-color);
 }
 
-/* 3. 右侧图标 (尺寸已调小) */
 .accordion-icon {
-    font-size: 1.5rem; /* 减小图标大小 */
+    font-size: 1.5rem;
     font-weight: 300;
     color: var(--link-color);
     transition: transform 0.3s ease-in-out;
@@ -543,7 +539,6 @@ footer {
     transform: rotate(45deg);
 }
 
-/* 4. 内容面板 (动画效果) */
 .accordion-panel {
     background-color: var(--card-bg-color);
     backdrop-filter: blur(10px);
@@ -563,21 +558,18 @@ footer {
     max-height: 1000px; 
 }
 
-/* 5. 【新增】为内容面板里的列表添加样式 */
 .accordion-panel .content-list {
-    list-style-type: circle; /* 设置为空心圆点，和您图片中一样 */
-    padding-left: 20px;      /* 调整列表的左侧缩进 */
-    margin: 0;               /* 移除列表默认的外边距 */
+    list-style-type: circle;
+    padding-left: 20px;     
+    margin: 0;
 }
 
 .accordion-panel .content-list li {
-    font-size: 1rem;            /* 列表项的字体大小 */
-    color: var(--link-color);   /* 列表项的颜色 */
-    margin-bottom: 0.8rem;      /* 列表项之间的垂直间距 */
+    font-size: 1rem;
+    color: var(--link-color);
+    margin-bottom: 0.8rem;
     line-height: 1.5;
 }
-
-/* 确保最后一个列表项没有多余的下边距 */
 .accordion-panel .content-list li:last-child {
     margin-bottom: 0;
 }
@@ -691,4 +683,14 @@ footer {
     div > h1:last-of-type { /* 隐藏“被你发现了” */
         display: none;
     }
+}
+
+html.dark-reader-active body {
+    filter: invert(1) hue-rotate(180deg) !important;
+}
+html.dark-reader-active #bgVideo,
+html.dark-reader-active img,
+html.dark-reader-active video,
+html.dark-reader-active svg {
+    filter: invert(1) hue-rotate(180deg) !important;
 }
